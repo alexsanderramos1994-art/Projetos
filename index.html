@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loja Demo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+    .product { border: 1px solid #ddd; padding: 12px; border-radius: 8px; }
+    .hide { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Loja Demo</h1>
+
+  <label for="search">Buscar produto:</label>
+  <input id="search" placeholder="digite para filtrar..." />
+
+  <div class="grid" id="products"></div>
+
+  <hr />
+  <p>Itens no carrinho: <strong id="cart-count">0</strong></p>
+  <p>Total: <strong id="cart-total">R$ 0,00</strong></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
